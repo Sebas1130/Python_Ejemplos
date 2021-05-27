@@ -1,4 +1,4 @@
-from ejercicio1 import Array
+from claseArray import Array
 
 
 class Grid():
@@ -10,8 +10,19 @@ class Grid():
     def get_height(self):
         return len(self.data)
 
-    def get_width(self,):
-        return len.data[0]
+    def get_width(self):
+        return len(self.data[0])
 
     def __getitem__(self,index):
         return self.data[index]
+
+    def __str__(self):
+        result = ""
+
+        for row in range(self.get_height()):
+            for col in range(self.get_width()):
+                result += str(self.data[row][col]) + " "
+
+            result += "\n"
+
+        return str(result)
