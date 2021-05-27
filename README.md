@@ -1,4 +1,5 @@
-#PROYECTO 1 Array.py
+# PROYECTO 1 Array.py
+
 ### Código utilizado para la clase 'Crear un arreglo'.
 
 #### Clase de tipo de matriz
@@ -34,7 +35,7 @@
 	menu.__setitem__(2, 100)
 	menu.__getitem__(2)
 
-#PROYECTO 2 
+# PROYECTO 2 
 
 ### PROYECTO grid.py COMO INICIALIZARLO
 
