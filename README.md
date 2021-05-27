@@ -9,9 +9,9 @@
       Obtener ancho
       Elemento de acceso
       Representación de cadenas
-
 ##### Código utilizado en el shell de Python  para instanciar una cuadrícula
 Para inicializar el shell de python se ejecuta el siguiente comando 
+
 	$ python3
 
 ##### primero importmos Grid del archivo grid
