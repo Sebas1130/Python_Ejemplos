@@ -116,7 +116,7 @@ Se pueden implementar distintos tipos de listas enlazadas. En este post vamos a 
             		return 0
 ```
 ##### El siguiente método, insert(datos, posición), inserta un elemento tras la posición indicada. Si se indica la posición 0, el nuevo elemento pasa a ser la cabecera de la lista. En esta implementación, si la posición que se pasa como argumento excede el tamaño de la lista, el elemento se inserta al final:
-
+```javascript
 	    def insert(self, data, position):
         	new_node = Node(data)
 
@@ -131,7 +131,7 @@ Se pueden implementar distintos tipos de listas enlazadas. En este post vamos a 
                 		k += 1
             		new_node.next = current.next
             		current.next = new_node
-
+```
 ##### El método delete(posición) borra el elemento en la posición pasada como parámetro. Si es el primer elemento la lista de la cabeza pasa a ser el segundo elemento. Si se encuentra el elemento en la lista y se borra devolvemos True, en caso contrario devolvemos False:
 
 ```javascript
