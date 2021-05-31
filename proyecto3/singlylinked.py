@@ -5,10 +5,16 @@ class Node:
 
 
 class SinglyLinkedList:
+    
     def __init__(self, head):
         self.head = head
  
     def length(self) -> int:
+        """ El método que cuenta los elementos de la lista, length(),
+            primero comprueba que la lista no esté vacía, y luego recorre
+            todos los elementos de la lista incrementando un contador por 
+            cada elemento. Al final devuelve el contador:
+        """
         current = self.head
         if current is not None:
             count = 1
@@ -21,6 +27,13 @@ class SinglyLinkedList:
             return 0
     
     def insert(self, data, position):
+        """
+        El siguiente método, insert(datos, posición), inserta un elemento 
+        tras la posición indicada. Si se indica la posición 0, el nuevo 
+        elemento pasa a ser la cabecera de la lista. En esta implementación, 
+        si la posición que se pasa como argumento excede el tamaño de la lista,
+        el elemento se inserta al final:
+        """
         new_node = Node(data)
 
         if position == 0:
@@ -36,6 +49,12 @@ class SinglyLinkedList:
             current.next = new_node
    
     def delete(self, position):
+        """
+        El método delete(posición) borra el elemento en la posición pasada como 
+        parámetro. Si es el primer elemento la lista de la cabeza pasa a ser el 
+        segundo elemento. Si se encuentra el elemento en la lista y se borra devolvemos
+        True, en caso contrario devolvemos False:
+        """
         if position != 1:
             current = self.head
             k = 1

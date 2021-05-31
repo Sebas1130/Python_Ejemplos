@@ -1,4 +1,4 @@
-from claseArray import Array
+from proyecto1.claseArray import Array
 
 
 class Grid():
