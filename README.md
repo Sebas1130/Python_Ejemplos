@@ -12,10 +12,11 @@
     Reemplazo
 
 ##### Código utilizado en el shell para crear una matriz.
-
+```javascript
 	$ python3 
+```
 ##### instancia y métodos
-
+```javascript
 	from array import Array
 	menu = Array(5)
 	len(menu)
@@ -26,15 +27,16 @@
 	menu[2]
 	for item in menu:
     print(menu)
+```
 ##### Comandos para ver la longitud y altura de objecto matrix
-
+```javascript
 	menu.__len__()
 	menu.__str__()
 	menu.__iter__()
 	menu.__getitem__(2)
 	menu.__setitem__(2, 100)
 	menu.__getitem__(2)
-
+```
 # PROYECTO 2 
 
 ## PROYECTO grid.py COMO INICIALIZARLO
