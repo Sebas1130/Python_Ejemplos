@@ -12,10 +12,11 @@
     Reemplazo
 
 ##### Código utilizado en el shell para crear una matriz.
-
+```javascript
 	$ python3 
+```
 ##### instancia y métodos
-
+```javascript
 	from array import Array
 	menu = Array(5)
 	len(menu)
@@ -26,15 +27,16 @@
 	menu[2]
 	for item in menu:
     print(menu)
+```
 ##### Comandos para ver la longitud y altura de objecto matrix
-
+```javascript
 	menu.__len__()
 	menu.__str__()
 	menu.__iter__()
 	menu.__getitem__(2)
 	menu.__setitem__(2, 100)
 	menu.__getitem__(2)
-
+```
 # PROYECTO 2 
 
 ## PROYECTO grid.py COMO INICIALIZARLO
@@ -48,27 +50,37 @@
       Obtener ancho
       Elemento de acceso
       Representación de cadenas
+      
 ##### Código utilizado en el shell de Python  para instanciar una cuadrícula
 Para inicializar el shell de python se ejecuta el siguiente comando 
 
 	$ python3
 
 ##### primero importmos Grid del archivo grid
-	from grid import Grid
+
+```javascript
+        from grid import Grid
+```
 
 ##### despues le damos valor de 3 ,3  y lo guardamos en una varibale llamada matrix
-	matrix = Grid(3, 3)
+
+
+        matrix = Grid(3, 3)
+	
 
 ##### Imprimos aver que contiene la varibale matrix
-        print(matrix)
-##### despues creamos un ciclo  que crea el rando de el contenido de la avaribale matrix.get_height() osea la altura y con matrix.get_width el  ancho  y que multiplique row * column
 
+```javascript
+	print(matrix)
+```
+##### despues creamos un ciclo  que crea el rando de el contenido de la avaribale matrix.get_height() osea la altura y con matrix.get_width el  ancho  y que multiplique row * column
+```javascript
         for row in range(matrix.get_height()):
             for column in range(matrix.get_width()):
                 matrix[row][column] = row * column
-
+```
 ##### por ultimo podemos verificar que contiene el objecto por dentro con los siguientes comandos
-
+```javascript
         print(matrix) 
         matrix.get_height()
         matrix.get_width()
@@ -76,7 +88,7 @@ Para inicializar el shell de python se ejecuta el siguiente comando
         matrix.__getitem__(1)
         matrix.__getitem__(2)[0]
         matrix.__str__()
-	
+```
 # PROYECTO 3
 
 ## Lista enlazada lineal simple (singly linked list) – Implementación en Python
